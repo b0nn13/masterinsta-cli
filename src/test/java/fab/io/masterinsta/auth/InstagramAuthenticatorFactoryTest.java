@@ -37,7 +37,7 @@ public class InstagramAuthenticatorFactoryTest
     public void testGetConnection() throws Exception
     {
         InstagramAuthenticatorFactory instaAuth = InstagramAuthenticatorFactory.getInstance();
-        Instagram4j connection = instaAuth.connect("contato.matchleads@gmail.com", "M@tchLe@d99");
+        Instagram4j connection = instaAuth.connect("contato.matchleads@gmail.com", "*****");
         MatcherAssert.assertThat(connection.isLoggedIn(), is(true));
     }
 
